@@ -233,16 +233,16 @@ function getMenus(opts: { lang?: string; base: '/docs' | '/plugin' | '/api' }) {
 }
 
 export default defineConfig({
-	title: 'AoMao Editor',
-	favicon: 'https://cdn-object.aomao.com/icon/shortcut.png',
-	logo: 'https://cdn-object.aomao.com/icon/icon.svg',
+	title: '八维创作平台协同编辑器',
+	favicon: 'https://www.bwie.com/static/home/logo/logo.jpg',
+	logo: 'https://www.bwie.com/favicon.ico',
 	outputPath: 'docs-dist',
 	hash: true,
 	mode: 'site',
-	locales: [
-		['en-US', 'English'],
-		['zh-CN', '中文'],
-	],
+	// locales: [
+	// 	['en-US', 'English'],
+	// 	['zh-CN', '中文'],
+	// ],
 	ssr: {
 		devServerRender: false,
 		removeWindowInitialProps: true,
@@ -253,78 +253,78 @@ export default defineConfig({
 				title: 'Edit',
 				path: '/',
 			},
-			{
-				title: 'View',
-				path: '/view',
-			},
-			{
-				title: 'Docs',
-				path: '/docs',
-			},
-			{
-				title: 'Config',
-				path: '/config',
-			},
-			{
-				title: 'Plug-in',
-				path: '/plugin',
-			},
-			{
-				title: 'API',
-				path: '/api',
-			},
-			{
-				title: 'AoMao',
-				path: 'https://www.aomao.com',
-			},
-			{
-				title: 'Github',
-				path: 'https://github.com/itellyou-com/am-editor',
-			},
+			// {
+			// 	title: 'View',
+			// 	path: '/view',
+			// },
+			// {
+			// 	title: 'Docs',
+			// 	path: '/docs',
+			// },
+			// {
+			// 	title: 'Config',
+			// 	path: '/config',
+			// },
+			// {
+			// 	title: 'Plug-in',
+			// 	path: '/plugin',
+			// },
+			// {
+			// 	title: 'API',
+			// 	path: '/api',
+			// },
+			// {
+			// 	title: 'AoMao',
+			// 	path: 'https://www.aomao.com',
+			// },
+			// {
+			// 	title: 'Github',
+			// 	path: 'https://github.com/itellyou-com/am-editor',
+			// },
 		],
 		'zh-CN': [
 			{
 				title: '编辑',
 				path: '/zh-CN',
 			},
-			{
-				title: '阅读',
-				path: '/zh-CN/view',
-			},
-			{
-				title: '文档',
-				path: '/zh-CN/docs',
-			},
-			{
-				title: '配置',
-				path: '/zh-CN/config',
-			},
-			{
-				title: '插件',
-				path: '/zh-CN/plugin',
-			},
-			{
-				title: 'API',
-				path: '/zh-CN/api',
-			},
-			{
-				title: 'AoMao',
-				path: 'https://www.aomao.com',
-			},
-			{
-				title: 'Github',
-				path: 'https://github.com/itellyou-com/am-editor',
-			},
+			// {
+			// 	title: '阅读',
+			// 	path: '/zh-CN/view',
+			// },
+			// {
+			// 	title: '文档',
+			// 	path: '/zh-CN/docs',
+			// },
+			// {
+			// 	title: '配置',
+			// 	path: '/zh-CN/config',
+			// },
+			// {
+			// 	title: '插件',
+			// 	path: '/zh-CN/plugin',
+			// },
+			// {
+			// 	title: 'API',
+			// 	path: '/zh-CN/api',
+			// },
+			// {
+			// 	title: 'AoMao',
+			// 	path: 'https://www.aomao.com',
+			// },
+			// {
+			// 	title: 'Github',
+			// 	path: 'https://github.com/itellyou-com/am-editor',
+			// },
 		],
 	},
-	menus: {
-		'/zh-CN/docs': getMenus({ lang: 'zh-CN', base: '/docs' }),
-		'/docs': getMenus({ base: '/docs' }),
-		'/zh-CN/plugin': getMenus({ lang: 'zh-CN', base: '/plugin' }),
-		'/plugin': getMenus({ base: '/plugin' }),
-		'/zh-CN/api': getMenus({ lang: 'zh-CN', base: '/api' }),
-		'/api': getMenus({ base: '/api' }),
-	},
+	// menus: {
+	// 	'/zh-CN/docs': getMenus({ lang: 'zh-CN', base: '/docs' }),
+	// 	'/docs': getMenus({ base: '/docs' }),
+	// 	'/zh-CN/plugin': getMenus({ lang: 'zh-CN', base: '/plugin' }),
+	// 	'/plugin': getMenus({ base: '/plugin' }),
+	// 	'/zh-CN/api': getMenus({ lang: 'zh-CN', base: '/api' }),
+	// 	'/api': getMenus({ base: '/api' }),
+	// },
 	analytics: {
 		baidu: '91a0c5558015c5af2d5259d2bf4aa6eb',
 	},
@@ -348,12 +348,6 @@ export default defineConfig({
 		{
 			name: 'renderer',
 			content: 'webkit',
-		},
-	],
-	headScripts: [
-		{
-			src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
-			'data-ad-client': 'ca-pub-3706417744839656',
 		},
 	],
 	// more config: https://d.umijs.org/config

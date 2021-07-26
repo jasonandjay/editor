@@ -283,6 +283,9 @@ otClient.connect(
 //依赖安装好后，只需要在根目录执行以下命令
 
 yarn ssr
+// 关闭端口
+sudo lsof -i :7001
+sudo kill -9 653
 ```
 
 -   `packages` 引擎和工具栏

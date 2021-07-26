@@ -1,5 +1,5 @@
 ---
-title: am-editor multiplayer collaborative editor
+title: 多人协同编辑器
 sidemenu: false
 showFooter: false
 mobile: false
