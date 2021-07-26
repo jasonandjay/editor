@@ -55,6 +55,6 @@ function startServer() {
 	} catch (error) {
 		console.log(error);
 	}
-	server.listen(8080);
-	console.log('OT Server Listening on http://localhost:8080');
+	server.listen(9999);
+	console.log('OT Server Listening on http://localhost:9999');
 }

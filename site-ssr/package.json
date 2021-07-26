@@ -4,9 +4,9 @@
   "description": "",
   "private": true,
   "scripts": {
-    "start": "egg-scripts start --port=7001 --daemon --title=egg-aomao-ssr --env=prod",
+    "start": "egg-scripts start --port=8001 --daemon --title=egg-aomao-ssr --env=prod",
     "stop": "egg-scripts stop --title=egg-aomao-ssr",
-    "dev": "egg-bin dev --port=7001 --sticky",
+    "dev": "egg-bin dev --port=8001 --sticky",
     "debug": "cross-env RM_TMPDIR=none COMPRESS=none egg-bin debug",
     "start-doc": "cd ../ && yarn start",
     "test": "egg-bin test",

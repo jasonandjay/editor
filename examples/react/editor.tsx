@@ -21,8 +21,10 @@ const getMember = () => {
 
 const wsUrl =
 	IS_DEV && !isServer
-		? `ws://${window.location.hostname}:8080`
-		: 'wss://collab.aomao.com';
+		? // ? `ws://${window.location.hostname}:8080`
+		  'ws://123.206.55.50:9999'
+		: 'ws://123.206.55.50:9999';
+
 const member = getMember();
 
 const getReadonlyValue =
