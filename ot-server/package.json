@@ -4,7 +4,9 @@
   "description": "AoMao编辑器协作服务",
   "private": true,
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "build": "pm2 start src/index.js --title editor-socket",
+    "stop": "pm2 stop --title editor-socket"
   },
   "engines": {
     "node": ">=10.0.0"
