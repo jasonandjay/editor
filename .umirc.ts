@@ -2,29 +2,13 @@ import { defineConfig } from 'dumi';
 
 export default defineConfig({
 	title: '八维创作平台协同编辑器',
-	favicon: 'https://www.bwie.com/static/home/logo/logo.jpg',
+	favicon: 'https://www.bwie.com/favicon.ico',
 	logo: 'https://www.bwie.com/favicon.ico',
 	outputPath: 'docs-dist',
+	publicPath: './',
 	hash: true,
 	mode: 'site',
-	ssr: {
-		devServerRender: false,
-		removeWindowInitialProps: true,
-	},
-	navs: {
-		'en-US': [
-			{
-				title: 'Edit',
-				path: '/',
-			},
-		],
-		'zh-CN': [
-			{
-				title: '编辑',
-				path: '/zh-CN',
-			},
-		],
-	},
+	history: { type: 'hash' },
 	manifest: {
 		fileName: 'manifest.json',
 	},
@@ -47,5 +31,4 @@ export default defineConfig({
 			content: 'webkit',
 		},
 	],
-	// more config: https://d.umijs.org/config
 });

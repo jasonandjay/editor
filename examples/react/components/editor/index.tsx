@@ -41,6 +41,11 @@ export type EditorProps = Omit<EngineProps, 'defaultValue'> & {
 	toolbar?: ToolbarItemProps;
 };
 
+function sendMessage(value: any) {
+	// console.log('parent...', window.parent, value);
+	window.parent.postMessage(value, '*');
+}
+
 const EditorComponent: React.FC<EditorProps> = ({
 	defaultValue,
 	onLoad,
@@ -88,6 +93,8 @@ const EditorComponent: React.FC<EditorProps> = ({
 			(value: string, trigger: 'remote' | 'local' | 'both') => {
 				if (loading) return;
 				setValue(value);
+				sendMessage(value);
+				// console.log('parent message...', window.parent);
 				//自动保存，非远程更改，触发保存
 				if (trigger !== 'remote') autoSave();
 				if (props.onChange) props.onChange(value, trigger);

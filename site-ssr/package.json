@@ -4,16 +4,8 @@
   "description": "",
   "private": true,
   "scripts": {
-    "start": "egg-scripts start --port=8001 --daemon --title=egg-aomao-ssr --env=prod",
-    "stop": "egg-scripts stop --title=egg-aomao-ssr",
-    "dev": "egg-bin dev --port=8001 --sticky",
-    "debug": "cross-env RM_TMPDIR=none COMPRESS=none egg-bin debug",
-    "start-doc": "cd ../ && yarn start",
-    "test": "egg-bin test",
-    "cov": "egg-bin cov",
-    "lint": "eslint .",
-    "ci": "npm run lint && npm run cov",
-    "autod": "autod"
+    "start": "egg-scripts start --daemon --port=8001 --title=egg-aomao-ssr",
+    "stop": "egg-scripts stop --title=egg-aomao-ssr"
   },
   "engines": {
     "node": ">=10.0.0"
